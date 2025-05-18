@@ -1,0 +1,107 @@
+.accommodation {
+    background-color: var(--light-gray);
+  }
+  
+  .accommodationNote {
+    display: flex;
+    align-items: center;
+    background-color: rgba(217, 100, 58, 0.1);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+  }
+  
+  .infoIcon {
+    font-size: 2rem;
+    color: var(--terracotta);
+    margin-right: 1.5rem;
+  }
+  
+  .tableContainer {
+    overflow-x: auto;
+    margin-bottom: 2rem;
+  }
+  
+  .accommodationTable {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    background-color: var(--white);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .accommodationTable th,
+  .accommodationTable td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .accommodationTable th {
+    background-color: var(--terracotta);
+    color: var(--white);
+    font-weight: 600;
+  }
+  
+  .accommodationTable tr:last-child td {
+    border-bottom: none;
+  }
+  
+  .accommodationTable tr:hover {
+    background-color: rgba(217, 100, 58, 0.05);
+  }
+  
+  .accommodationInfo {
+    margin-bottom: 2rem;
+  }
+  
+  .infoItem {
+    display: flex;
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  }
+  
+  .iconWrapper {
+    font-size: 2.5rem;
+    color: var(--terracotta);
+    margin-right: 2rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .infoItem h3 {
+    margin-bottom: 1rem;
+    color: var(--text-color);
+  }
+  
+  .infoItem p {
+    color: var(--dark-gray);
+    margin-bottom: 0.5rem;
+  }
+  
+  .accommodationButton {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  
+  @media (max-width: 768px) {
+    .infoItem {
+      flex-direction: column;
+    }
+  
+    .iconWrapper {
+      margin-right: 0;
+      margin-bottom: 1.5rem;
+      justify-content: center;
+    }
+  
+    .accommodationTable th,
+    .accommodationTable td {
+      padding: 0.75rem;
+      font-size: 0.9rem;
+    }
+  }

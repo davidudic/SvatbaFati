@@ -1,0 +1,163 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: transparent;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    height: 80px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .header.scrolled {
+    background-color: var(--white);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  .logo {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--terracotta);
+  }
+  
+  .logo a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+  }
+  
+  /* Vylepšení pro čitelnost loga před scrollováním */
+  .logoLight {
+    color: white !important;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow pro lepší čitelnost */
+  }
+  
+  .navList {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+  }
+  
+  .navItem a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+    position: relative;
+  }
+  
+  /* Vylepšení pro čitelnost položek navbaru před scrollováním */
+  .navItemLight {
+    color: white !important;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow pro lepší čitelnost */
+    font-weight: 600 !important; /* Trochu tučnější text pro lepší čitelnost */
+  }
+  
+  .navItem a:hover {
+    color: var(--terracotta);
+  }
+  
+  .navItemLight:hover {
+    color: var(--champagne) !important; /* Světlejší barva pro hover nad bílým textem */
+  }
+  
+  .navItem a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--terracotta);
+    transition: width 0.3s ease;
+  }
+  
+  .navItem a:hover::after {
+    width: 100%;
+  }
+  
+  .menuToggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: var(--text-color);
+    cursor: pointer;
+  }
+  
+  /* Styling hamburger menu ikony před scrollováním */
+  .menuToggleLight {
+    color: white !important;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Vylepšení pro mobilní menu */
+  .navOpen {
+    right: 0;
+  }
+  
+  /* Přidání poloprůhledného tmavého pozadí pod navigaci před scrollováním */
+  .header:not(.scrolled)::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%);
+    z-index: -1;
+  }
+  
+  @media (max-width: 768px) {
+    .menuToggle {
+      display: block;
+      z-index: 1001;
+    }
+  
+    .nav {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      width: 70%;
+      height: 100vh;
+      background-color: var(--white);
+      padding: 5rem 2rem;
+      transition: right 0.3s ease;
+      box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    }
+  
+    .navOpen {
+      right: 0;
+    }
+  
+    .navList {
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+    }
+  
+    .navItem {
+      width: 100%;
+      text-align: center;
+    }
+  
+    /* Reset mobilního menu - vždy použít tmavý text v bočním menu */
+    .navOpen .navItemLight {
+      color: var(--text-color) !important;
+      text-shadow: none;
+      font-weight: 500 !important;
+    }
+  }

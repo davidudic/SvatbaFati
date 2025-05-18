@@ -1,0 +1,132 @@
+.info {
+    background-color: var(--white);
+    padding: 80px 0;
+    position: relative;
+  }
+  
+  .infoContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin: 3rem 0 2rem;
+  }
+  
+  .infoCard {
+    background-color: var(--light-gray);
+    border-radius: 10px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .infoCard::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: var(--terracotta);
+  }
+  
+  .infoCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+  
+  .infoHeader {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    text-align: center; /* Centrování nadpisu */
+    justify-content: center; /* Horizontální centrování obsahu */
+  }
+  
+  .infoIcon {
+    font-size: 1.5rem;
+    color: var(--terracotta);
+    margin-right: 0.75rem;
+  }
+  
+  .infoCard h3 {
+    font-size: 1.2rem;
+    margin: 0;
+    color: var(--text-color);
+    font-weight: 600;
+    text-align: center; /* Centrování textu nadpisu */
+  }
+  
+  .infoCard p {
+    margin-bottom: 0.5rem;
+    color: var(--dark-gray);
+    line-height: 1.6;
+  }
+  
+  .infoLink {
+    display: inline-block;
+    color: var(--terracotta);
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: auto;
+    padding-top: 0.75rem;
+    transition: all 0.3s ease;
+  }
+  
+  .infoLink:hover {
+    color: #c15631;
+    transform: translateX(5px);
+  }
+  
+  .infoNote {
+    background-color: rgba(217, 100, 58, 0.08);
+    border-radius: 8px;
+    padding: 1rem 1.5rem;
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  
+  .noteIcon {
+    font-size: 1.25rem;
+    color: var(--terracotta);
+    margin-right: 1rem;
+    flex-shrink: 0;
+  }
+  
+  .infoNote p {
+    margin: 0;
+    color: var(--dark-gray);
+  }
+  
+  @media (max-width: 1024px) {
+    .infoContainer {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .infoContainer {
+      grid-template-columns: 1fr;
+    }
+    
+    .infoCard {
+      padding: 1.25rem;
+    }
+    
+    .infoNote {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .noteIcon {
+      margin-right: 0;
+      margin-bottom: 0.75rem;
+    }
+  }
