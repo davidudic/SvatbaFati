@@ -261,3 +261,18 @@
       gap: 1.5rem;
     }
   }
+  
+  .scheduleNote {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  .scheduleNote p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--dark-gray);
+    text-align: center;
+    font-style: italic;
+    opacity: 0.8;
+  }

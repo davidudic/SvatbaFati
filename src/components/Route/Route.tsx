@@ -39,7 +39,7 @@ const Route: React.FC = () => {
                 <div className={styles.locationDetails}>
                   <div className={styles.locationDetail}>
                     <FaClock className={styles.detailIcon} />
-                    <span>Obřad začíná v 12:00</span>
+                    <span>Sraz v 11:00, obřad v 12:00</span>
                   </div>
                   <div className={styles.locationDetail}>
                     <FaParking className={styles.detailIcon} />
@@ -78,7 +78,7 @@ const Route: React.FC = () => {
                 <div className={styles.locationDetails}>
                   <div className={styles.locationDetail}>
                     <FaClock className={styles.detailIcon} />
-                    <span>Hostina začíná ve 14:30</span>
+                    <span>Sraz ve 14:15, hostina začíná ve 14:30</span>
                   </div>
                   <div className={styles.locationDetail}>
                     <FaParking className={styles.detailIcon} />
@@ -124,25 +124,76 @@ const Route: React.FC = () => {
             <div className={styles.timelineItem}>
               <div className={styles.timelineDot}></div>
               <div className={styles.timelineContent}>
-                <p className={styles.timelineTime}>12:00</p>
-                <p className={styles.timelineEvent}>Svatební obřad na hradě Valdštejn</p>
+                <p className={styles.timelineTime}>11:00 – 11:30</p>
+                <p className={styles.timelineEvent}>Sraz před hradem Valdštejn</p>
               </div>
             </div>
             <div className={styles.timelineItem}>
               <div className={styles.timelineDot}></div>
               <div className={styles.timelineContent}>
-                <p className={styles.timelineTime}>13:30 - 14:30</p>
-                <p className={styles.timelineEvent}>Přesun na hostinu</p>
+                <p className={styles.timelineTime}>12:00 – 12:30</p>
+                <p className={styles.timelineEvent}>Svatební obřad</p>
               </div>
             </div>
             <div className={styles.timelineItem}>
               <div className={styles.timelineDot}></div>
               <div className={styles.timelineContent}>
-                <p className={styles.timelineTime}>14:30</p>
-                <p className={styles.timelineEvent}>Začátek svatební hostiny v hotelu Malý Pivovar</p>
+                <p className={styles.timelineTime}>12:30 – 14:00</p>
+                <p className={styles.timelineEvent}>Focení a drobné pohoštění na Valdštejně</p>
+              </div>
+            </div>
+            <div className={styles.timelineItem}>
+              <div className={styles.timelineDot}></div>
+              <div className={styles.timelineContent}>
+                <p className={styles.timelineTime}>14:15</p>
+                <p className={styles.timelineEvent}>Sraz v hotelu malý Pivovar</p>
+              </div>
+            </div>
+            <div className={styles.timelineItem}>
+              <div className={styles.timelineDot}></div>
+              <div className={styles.timelineContent}>
+                <p className={styles.timelineTime}>14:30 – 16:00</p>
+                <p className={styles.timelineEvent}>Přivítání v hotelu, rozbíjení talířů, zahájení hostiny</p>
+              </div>
+            </div>
+            <div className={styles.timelineItem}>
+              <div className={styles.timelineDot}></div>
+              <div className={styles.timelineContent}>
+                <p className={styles.timelineTime}>16:00 – 17:30</p>
+                <p className={styles.timelineEvent}>Klavírní koncert, první tanec novomanželů, hudební vystoupení</p>
+              </div>
+            </div>
+            <div className={styles.timelineItem}>
+              <div className={styles.timelineDot}></div>
+              <div className={styles.timelineContent}>
+                <p className={styles.timelineTime}>17:30 – 18:00</p>
+                <p className={styles.timelineEvent}>Krájení dortu</p>
+              </div>
+            </div>
+            <div className={styles.timelineItem}>
+              <div className={styles.timelineDot}></div>
+              <div className={styles.timelineContent}>
+                <p className={styles.timelineTime}>20:00 – 23:30</p>
+                <p className={styles.timelineEvent}>Večerní zábava</p>
+              </div>
+            </div>
+            <div className={styles.timelineItem}>
+              <div className={styles.timelineDot}></div>
+              <div className={styles.timelineContent}>
+                <p className={styles.timelineTime}>24:00</p>
+                <p className={styles.timelineEvent}>Ukončení slavnosti</p>
               </div>
             </div>
           </div>
+          <motion.div 
+            className={styles.scheduleNote}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+          >
+            <p>* Vyhrazujeme si právo změny v harmonogramu. Toto nemusí být finální verze programu.</p>
+          </motion.div>
         </motion.div>
       </div>
     </section>
