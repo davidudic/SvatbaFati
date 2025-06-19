@@ -102,13 +102,6 @@ const Accommodation: React.FC = () => {
                 <td>3 150 Kč</td>
                 <td>3 430 Kč</td>
               </tr>
-              <tr>
-                <td>Královské apartmá</td>
-                <td>0 Kč</td>
-                <td>0 Kč</td>
-                <td>-</td>
-                <td>-</td>
-              </tr>
             </tbody>
           </table>
         </motion.div>
@@ -120,16 +113,20 @@ const Accommodation: React.FC = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.4 }}
         >
-          <div className={styles.infoItem}>
-            <div className={styles.iconWrapper}>
+          <div className={styles.infoItem} style={{ flexDirection: 'column', textAlign: 'center', alignItems: 'center' }}>
+            <div className={styles.iconWrapper} style={{ marginBottom: '1rem' }}>
               <FaBed />
             </div>
             <div>
-              <h3>Rezervace</h3>
-              <p>Pro rezervaci kontaktujte přímo hotel:</p>
-              <p>Tel: +420 326 773 890</p>
-              <p>Email: info@hotelmalypivovar.cz</p>
-              <p>Při rezervaci nezapomeňte uvést, že jste naši svatební hosté pro získání slevy 30%.</p>
+              <h3 style={{ fontSize: '1.5rem', marginBottom: '1rem' }}>Rezervace</h3>
+              <p>Rezervace zprostředkujeme my na základě dotazníku níže.</p>
+              <a 
+                href="#rsvp" 
+                className="btn"
+                style={{ marginTop: '1rem', display: 'inline-block' }}
+              >
+                Přejít na dotazník
+              </a>
             </div>
           </div>
         </motion.div>
