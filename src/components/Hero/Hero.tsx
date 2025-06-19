@@ -39,7 +39,7 @@ const Hero: React.FC = () => {
           transition={{ duration: 0.8, delay: 0.6 }}
         >
           <a href="#rsvp" className={styles.rsvpButton}>
-            Potvrdit účast
+            Potvrdit účast na svatební hostině
           </a>
         </motion.div>
       </div>
