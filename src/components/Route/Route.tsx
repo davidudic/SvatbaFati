@@ -54,14 +54,14 @@ const Route: React.FC = () => {
                   <div className={styles.routeStat}>
                     <FaCarSide className={styles.routeIcon} />
                     <div>
-                      <p className={styles.routeValue}>30 km</p>
+                      <p className={styles.routeValue}>24 km</p>
                       <p className={styles.routeLabel}>Vzdálenost</p>
                     </div>
                   </div>
                   <div className={styles.routeStat}>
                     <FaClock className={styles.routeIcon} />
                     <div>
-                      <p className={styles.routeValue}>40 min</p>
+                      <p className={styles.routeValue}>20 min</p>
                       <p className={styles.routeLabel}>Doba jízdy</p>
                     </div>
                   </div>
@@ -89,7 +89,7 @@ const Route: React.FC = () => {
             </div>
 
             <a 
-              href="https://www.google.com/maps/dir/Hrad+Vald%C5%A1tejn,+Kamenice,+Czech+Republic/Hotel+Mal%C3%BD+pivovar,+Kl%C3%A1%C5%A1ter+Hradi%C5%A1t%C4%9B+nad+Jizerou+475+-+Kl%C3%A1%C5%A1ter,+295+68+Kl%C3%A1%C5%A1ter+H/data=!4m14!4m13!1m5!1m1!1s0x470eb9c2f7058e67:0x7efd9a239d1a0f0f!2m2!1d15.1774813!2d50.5660657!1m5!1m1!1s0x470934e6d6b19eb5:0xa7a5ab5e8f38f33!2m2!1d14.9591195!2d50.527972!3e0?entry=ttu" 
+              href="https://maps.app.goo.gl/Cb5f6WPvF721qxL48" 
               target="_blank" 
               rel="noopener noreferrer" 
               className={styles.mapsButton}
@@ -100,7 +100,7 @@ const Route: React.FC = () => {
 
           <div className={styles.routeMap}>
             <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d80771.45222696667!2d15.048791734696733!3d50.53996037664183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x470eb9c2f7058e67%3A0x7efd9a239d1a0f0f!2zSHJhZCBWYWxkxaF0ZWpuLCBLYW1lbmljZSwgQ3plY2ggUmVwdWJsaWM!3m2!1d50.5660657!2d15.1774813!4m5!1s0x470934e6d6b19eb5%3A0xa7a5ab5e8f38f33!2zSG90ZWwgTWFsw70gcGl2b3ZhciwgS2zDocWhdGVyLCBNbmljaG92byBIcmFkacWhdMSbLCBLbMOhxaF0ZXIgSHJhZGnFocSbIG5hZCBKaXplcm91IDQ3NSAtIEtsw6HFoXRlciwgMjk1IDY4IEtsw6HFoXRlciBI!3m2!1d50.527972!2d14.959119499999999!5e0!3m2!1sen!2scz!4v1683021529881!5m2!1sen!2scz" 
+              src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d81115.4213869521!2d14.975806782217974!3d50.555430779508335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x470eb3c9edbd9f8d%3A0xed385a788c57fb44!2zUGFya292acWhdMSbIHBvZCBWYWxkxaF0ZWpuZW0sIDI3OTI3LCBUdXJub3YgMS1QZWxlxaFhbnk!3m2!1d50.5685915!2d15.1660354!4m5!1s0x4709523ca622c611%3A0xf584478c785e506!2zSG90ZWwgTWFsw70gUGl2b3ZhciwgS2zDocWhdGVyIEhyYWRpxaF0xJsgbmFkIEppemVyb3UgMjIsIDI5NCAxNSBLbMOhxaF0ZXIgSHJhZGnFoXTEmyBuYWQgSml6ZXJvdQ!3m2!1d50.5247222!2d14.946388899999999!5e0!3m2!1sen!2scz!4v1750365407067!5m2!1sen!2scz" 
               width="100%" 
               height="450" 
               style={{ border: 0 }} 
