@@ -86,7 +86,7 @@ const Info: React.FC = () => {
           transition={{ duration: 0.6, delay: 0.3 }}
         >
           <FaInfoCircle className={styles.noteIcon} />
-          <p>Prosíme, potvrďte svou účast nejpozději do 10. září 2025 pomocí formuláře v sekci Dotazníku.</p>
+          <p>Prosíme, potvrďte svou účast nejpozději do 20. srpna 2025 pomocí formuláře v sekci Dotazníku.</p>
         </motion.div>
       </div>
     </section>
